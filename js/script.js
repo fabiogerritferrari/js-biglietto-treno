@@ -27,5 +27,8 @@ if(età < 18){
     sconto=(prezzoBiglietto * 40) / 100;
     prezzoFinale = prezzoBiglietto - sconto;
 }
+
+prezzoFinale = prezzoFinale.toFixed(2) 
+
 console.log(`il prezzo finale del biglietto è ${prezzoFinale}€`);
 //output deve essere approssimato a massimo 2 cifre sotto lo zero
